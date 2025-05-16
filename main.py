@@ -12,6 +12,12 @@ dp = Dispatcher()
 # taskkill /F /IM python.exe
 # this is to stop if bot is running in multiple termunals
 
+"""git add . — stages all changed files
+
+git commit -m "..." — saves a snapshot of changes
+
+git push — sends the changes to GitHub"""
+
 
 async def main():
     await async_main()
