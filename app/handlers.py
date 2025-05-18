@@ -371,11 +371,11 @@ async def next_listing(callback: CallbackQuery, state: FSMContext):
     state_data = await state.get_data()
     try:
         index = state_data['index']
-        index_1 = index + 1
+        
     except KeyError:
         await callback.message.answer("⚠️ Пожалуйста, сначала выберите город!", reply_markup=kb.city_kb)
         return
-    await state.update_data(index=index_1)
+    await state.update_data(index=index + 1)
     await send_with_buttons(callback, state)
 
 
