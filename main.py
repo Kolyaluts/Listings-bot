@@ -12,11 +12,9 @@ dp = Dispatcher()
 # taskkill /F /IM python.exe
 # this is to stop if bot is running in multiple termunals
 
-"""git add .
-
-git commit -m "..."
-
-git push """
+"""git add ../requirements.txt ../main.py
+git commit -m "Update requirements.txt and main.py"
+git pull origin main && git push origin main"""
 
 
 async def main():
