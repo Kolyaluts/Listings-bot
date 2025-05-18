@@ -10,7 +10,7 @@ from app.bot_instance import bot
 dp = Dispatcher()
 
 # taskkill /F /IM python.exe
-# this is to stop if bot is running in multiple termunals
+# this is to stop if bot is running in multiple terminals
 
 """git add ../requirements.txt ../main.py
 git commit -m "Update requirements.txt and main.py"
