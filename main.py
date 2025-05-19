@@ -6,15 +6,17 @@ from aiogram.types import Message, InlineKeyboardMarkup, KeyboardButton, InlineK
 from app.handlers import router
 from app.database.models import async_main
 from app.database import requests as rq
-from app.bot_instance import bot
-dp = Dispatcher()
+from app.bot_instance import bot, dp
+
+
 
 # taskkill /F /IM python.exe
 # this is to stop if bot is running in multiple terminals
 
-"""git add ../requirements.txt ../main.py
-git commit -m "Update requirements.txt and main.py"
-git pull origin main && git push origin main"""
+# This is to sync with github
+"""git add .
+git commit -m "Your commit message here"
+git push origin main"""
 
 
 async def main():
@@ -33,3 +35,4 @@ if __name__ == "__main__":
 # check try except in send with buttons
 # when i pressed show all locked till last but didnt click next so no listings wasnt sent, than directly pressed sort by price and only onle listing was sent, from two, than no more listings was sent
 # in guidance about adding listing i need to add how long title description... should be
+
